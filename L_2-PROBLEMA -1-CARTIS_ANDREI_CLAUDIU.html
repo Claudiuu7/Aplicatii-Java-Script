@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset = "utf-8">
+        <title>Distanta dintre 2 puncte</title>		
+    <script type = "text/javascript">
+	function calculateDistance() {
+  var pointx1 = parseInt(document.getElementById("pointx1").value);
+  var pointy1 = parseInt(document.getElementById("pointy1").value);
+  var pointx2 = parseInt(document.getElementById("pointx2").value);
+  var pointy2 = parseInt(document.getElementById("pointy2").value);
+
+  var distance = Math.sqrt(Math.pow((pointx1-pointx2),2)+Math.pow((pointy1-pointy2),2));
+
+  window.alert("Distance: "+distance);
+}
+	</script>
+        </head>
+            <body>
+                <form name = "f1" method="post">
+                    <label>Punctul 1:</label><br>
+                    x1:<input type = "text" id = "pointx1" size = "3"/> &nbsp; y1:<input type = "text" id = "pointy1" size = "3"/> <br><br>
+                    <label>Punctul 2:</label> <br>
+                    x2:<input type = "text" id = "pointx2" size = "3"/> &nbsp; y2:<input type = "text" id = "pointy2" size = "3"/><br><br>
+                    <button onclick = "calculateDistance()">Calculate Distance</button>
+             </form>
+        </body>
+</html>

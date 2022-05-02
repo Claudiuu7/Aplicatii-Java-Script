@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script>
+      function printNos(n)
+    {
+        if(n > 0)
+        {
+            printNos(n - 2);
+            document.write(n + " ");
+        }
+        return;
+    }
+    printNos(100);
+    </script>
+  </head>
+</html>
